@@ -1,0 +1,156 @@
+body {
+	font-family: "Blinker"!important;
+	color: #003049!important;
+}
+
+.top_menu {
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0px 3px 30px #00000029;
+	border-bottom: 1px solid #003049;
+	padding: 0px 51px 0px 24px;
+	background-color: #fff;
+	position: relative;
+	z-index: 10;
+}
+
+.logo {
+
+}
+
+.logo img {
+	max-height: 143px;
+}
+
+.menu_options {
+	display: flex;
+	align-items: center;
+}
+
+.menu_options a:hover {
+	text-decoration: unset;
+}
+
+.menu_box {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	transition: 0.1s ease-in-out;
+	margin-right: 33px;
+}
+
+.menu_box a {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.menu_box:hover {
+	cursor: pointer;
+	border-bottom: 8px solid #F77F00;
+}
+
+.menu_box.active {
+	border-bottom: 8px solid #F77F00;
+}
+
+.menu_box.portfolio {
+	margin-right: 68px;
+}
+
+.menu_option {
+	display: block;
+	font-size: 30px;
+	line-height: 36px;
+	margin-top: 20px;
+	color: initial;
+}
+
+.language_option {
+	display: none;
+	font-size: 30px;
+	line-height: 36px;
+	color: #F77F00;
+	font-weight: bold;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.mobile_hamburger {
+	display: none;
+}
+
+.mobile_hamburger_close {
+	display: none;
+}
+
+.body_dark_overlay {
+	background-color: #000;
+	height: 100vh;
+	width: 100vw;
+	opacity: 0.6;
+	position: fixed;
+	top: 0;
+	display: none;
+}
+
+@media(max-width: 992px) {
+	.logo img {
+        max-height: 104px;
+    }
+
+    .top_menu {
+    	align-items: center;
+    }
+
+    .menu_options {
+    	display: none;
+		position: fixed;
+	    display: flex;
+	    flex-direction: column;
+	    top: 0px;
+	    right: -400px;
+	    align-items: flex-start;
+	    background-color: #ffffff;
+	    width: 317px;
+	    height: 100vh;
+	    padding-top: 78px;
+	    transition: 0.7s;
+    }
+
+    .menu_box, .menu_box.portfolio {
+		height: unset;
+	    width: -webkit-fill-available;
+		width: -moz-available;
+	    width: fill-available;
+	    margin-left: 95px;
+	    margin-right: 0px;
+	    margin-bottom: 35px;
+    }
+
+    .menu_box.active {
+    	border-bottom: 2px solid #F77F00;
+    }
+
+    .menu_box:hover {
+		cursor: pointer;
+		border-bottom: 2px solid #F77F00;
+	}
+
+    .mobile_hamburger {
+    	display: block;
+    	height: 40px;
+    }
+
+    .mobile_hamburger_close {
+    	display: block;
+    	width: 27px;
+    	height: 27px;
+    	margin-left: 32px;
+    	margin-bottom: 62px;
+    }
+
+    .menu_option {
+    	margin-top: 0px;
+    }
+}

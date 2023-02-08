@@ -1,0 +1,180 @@
+body {
+	color: #003049!important;
+}
+
+.who-we-are-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-top: 60px;
+}
+
+.who-we-are-text {
+	max-width: 500px;
+}
+
+.who-we-are-text-header {
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 50px;
+	position: relative;
+	width: max-content;
+	margin-bottom: 20px;
+}
+
+.who-we-are-text-header .orange-bar {
+	position: absolute;
+	top: 0px;
+	right: -68px;
+	background-color: #F77F00;
+	height: 15px;
+	width: 60px;
+}
+
+.who-we-are-text-description {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+
+.who-we-are-text-description span {
+	color: #D62828;
+}
+
+.who-we-are-image {
+	width: 300px;
+	height: min-content;
+}
+
+
+.we-do-it {
+	font-size: 60px;
+	color: #000000;
+	opacity: 0.23;
+	margin-bottom: 40px;
+}
+
+.staff-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nenad {
+	display: flex;
+	align-items: flex-start;
+	max-width: 400px;
+}
+
+.nenad-img {
+	display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.nenad-img img {
+	position: absolute;
+	left: -10px;
+	top: -7px;
+}
+
+.nenad-header-text {
+	margin-left: 15px;
+	margin-bottom: 10px;
+}
+
+.nenad-name{
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	margin-top: 22px;
+}
+
+.nenad-profession {
+	font-size: 20px;
+	line-height: 20px;
+	color: #F77F00;
+	margin-bottom: 30px;
+}
+
+.nenad-description {
+	font-size: 20px;
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+.nenad-hashtags {
+	font-size: 20px;
+	line-height: 20px;
+}
+
+.staff-office {
+	max-width: 400px;
+}
+
+.staff-office img {
+	max-width: 400px;
+}
+
+@media(max-width: 992px) {
+	.who-we-are-text-header .orange-bar {
+		height: 10px;
+	}
+
+	.who-we-are-text-description {
+		font-size: 15px;
+	}
+
+	.who-we-are-row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.staff-office {
+		display: none;
+	}
+
+	.we-do-it {
+		text-align: center;
+		font-size: 50px;
+		line-height: 30px;
+		margin-top: 20px;
+	}
+
+	.nenad-img {
+		width: 66px;
+		height: 66px;
+		min-width: 66px;
+	}
+
+	.nenad-img img {
+		height: 109px;
+		top: unset;
+		left: unset;
+	}
+
+	.nenad-name {
+		margin-top: unset;
+	}
+
+	.nenad-description {
+		font-size: 15px;
+		line-height: 15px;
+	}
+
+	.nenad-hashtags {
+		font-size: 15px;
+		line-height: 15px;
+	}
+
+	.nenad-logo {
+		width: 228px;
+	}
+
+	.staff-row {
+		justify-content: center;
+	}
+}
